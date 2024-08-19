@@ -5,15 +5,21 @@
     margin: 0;
     padding: 0;
   }
-
+html{
+  background-color: hsl(332, 51%, 32%);
+}
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: hsl(30, 10%, 34%);
-    background-color: #f9f9f9;
+    background-color: hsl(330, 100%, 98%);
     padding: 20px;
-    margin: 0 auto;
+    margin: 40px auto;
+    border: 1px solid #ccc;
     max-width: 1440px;
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
 h1, h2, h3 {
@@ -32,6 +38,7 @@ h1 {
 
 h3 {
     font-size: 18px;
+    color: hsl(14, 45%, 36%);
   }
 
 p {
@@ -71,6 +78,7 @@ li {
 
 ul li::before {
     content: "\2022";
+    color: rosybrown;
     font-weight: bold;
     font-size: 18px;
     margin-right: 10px;
@@ -78,10 +86,12 @@ ul li::before {
 
 ol li {
     counter-increment: item;
+    margin-bottom: 10px;
   }
 
 ol li::before {
     content: counter(item) ". ";
+    color: rosybrown;
     font-weight: bold;
     font-size: 18px;
     margin-right: 10px;
@@ -104,6 +114,10 @@ ol li::before {
 
 .par {
     margin-bottom: 20px;
+    border: 1px solid rosybrown;
+    padding: 20px;
+    box-shadow: 0 0 10px rosybrown;
+    margin: 20px auto;
   }
 
 .par p {
